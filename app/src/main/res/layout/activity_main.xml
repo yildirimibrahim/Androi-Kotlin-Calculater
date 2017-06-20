@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kotlin.sample.MainActivity">
+
+
+    <EditText
+        android:hint="value 1"
+        android:id="@+id/etValue1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="54dp" />
+
+    <EditText
+        android:layout_below="@id/etValue1"
+        android:hint="value 2"
+        android:id="@+id/etValue2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="109dp" />
+
+    <TextView
+        android:layout_below="@id/etValue2"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sonuç : "
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="188dp" />
+
+    <TextView
+        android:id="@+id/tvSonuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="188dp"
+        android:layout_below="@+id/etValue2"
+        android:layout_toRightOf="@+id/btnCarpma"
+        android:layout_toEndOf="@+id/btnCarpma" />
+
+    <Button
+        android:id="@+id/btnToplama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Topla ( + )"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="256dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp" />
+
+    <Button
+        android:id="@+id/btnCikarma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cikarma ( - )"
+        tools:layout_editor_absoluteX="236dp"
+        tools:layout_editor_absoluteY="256dp"
+        android:layout_alignBaseline="@+id/btnToplama"
+        android:layout_alignBottom="@+id/btnToplama"
+        android:layout_toRightOf="@+id/btnCarpma"
+        android:layout_toEndOf="@+id/btnCarpma"
+        android:layout_marginLeft="47dp"
+        android:layout_marginStart="47dp" />
+
+    <Button
+        android:id="@+id/btnCarpma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Çarpma ( * )"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="351dp"
+        android:layout_alignBaseline="@+id/btnBolme"
+        android:layout_alignBottom="@+id/btnBolme"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btnBolme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bölme ( / )"
+        tools:layout_editor_absoluteX="236dp"
+        tools:layout_editor_absoluteY="354dp"
+        android:layout_below="@+id/btnCikarma"
+        android:layout_alignLeft="@+id/btnCikarma"
+        android:layout_alignStart="@+id/btnCikarma"
+        android:layout_marginTop="20dp"
+        android:layout_alignRight="@+id/btnCikarma"
+        android:layout_alignEnd="@+id/btnCikarma" />
+
+
+</RelativeLayout>
